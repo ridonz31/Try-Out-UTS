@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Jasa Tukang Bangunan & Aplikasi Pertukangan</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+  <header>
+    <h1>KANGGO</h1>
+    <p>Selamat datang di KANGGO jasa tukang bangunan No.1 Di Indonesia </p>
+  </header>
+  <menu>
+    <ul>
+      <li><a href="">HOME</a></li>
+      <li><a href="">TENTANG KAMI</a></li>
+      <li><a href="">DAFTAR HARGA</a></li>
+      <li><a href="">PUSAT BANTUAN</a></li>
+      <li><a href="">TESTIMONIAL</a></li>
+    </ul>
+  </menu>
+  <article>
+    
+    <h2>KANGGO</h2>
+    <img src="https://kanggo.id/wp-content/uploads/2022/01/360.webp">
+    <p>Aplikasi yang menghubungkan kebutuhan bangunan Anda dengan para tukang profesional dengan berbagai keahlian.<br>
+Biarkan kami yang menangani kebutuhan perbaikan bangunan Anda, mulai dari perbaikan nat keramik yang bolong di kamar mandi, perbaikan talang air menjelang musim hujan, pengecatan kamar/ruangan, hingga renovasi dapur, dapat kami selesaikan dengan baik.<br>
+Dengan dukungan mitra tukang yang profesional dan berkualitas, Kanggo berkomitmen untuk membantu segala kebutuhan perbaikan bangunan Anda, Download aplikasi kanggo, segala kebutuhan perbaikan bangunan Anda <font color="blue">#TukangReadyToGo</font></p>
+<br>
+    <h2>Layanan Yang Kami Sediakan</h2>
+<body>
+    <ul>
+        <li>Pekerjaan Atap dan Dak Beton</li>
+        <li>Pekerjaan Pengecatan</li>
+        <li>Pekerjaan Perbaikan Dapur</li>
+        <li>Pekerjaan Keramik</li>
+        <li>Pekerjaan Instalasi Pipa/Plumbing</li>
+        <li>Pekerjaan Instalasi Listrik</li>
+        <li>Pekerjaan Plafon</li>
+    </ul>
+</body>
+  </article>
+  <br>
+  <footer>
+    <p>&copy; Copyright RIDONZ 2022</p>
+  </footer>
+</body>
+</html>
+
+
+<button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+</body>
+</html>

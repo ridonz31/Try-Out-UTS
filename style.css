@@ -1,0 +1,13 @@
+*{padding: 0px; margin: 0px;}
+
+body {width: 900px; margin: auto;}
+
+header{background-color: #7b0c0c; font-family: verdana, arial, arial blackl;}
+header h1{color: #b4d0d0; padding: 20px; padding-bottom: 15px}
+header p{color: #b4d0d0; padding: 20px; padding-top: 0px;}
+
+menu {background-color: #3d3d3b; height: 50px;}
+menu ul {list-style: none; line-height: 50px;}
+menu ul li {float: left; width: 20%; text-align: center;}
+menu ul li a {color: #d4d0d0; text-decoration: none; font-family: verdana; display: block; }
+menu ul li a:hover {background-color: yellow; color: black;} 
